@@ -1,7 +1,6 @@
 <?php require '../template/partials/_top.tpl.php'; ?>
-
-<a href="index-question.php">Go back</a>
-
+<div class="container">
+<a class="d-flex justify-content-start" href="index-question.php">Retourner en arrière</a>
 
 <form action="" method="POST">
     <label for="confirm">Êtes-vous sûr de vouloir supprimer cette question?</label>
@@ -15,5 +14,6 @@
 </form>
 
 
+</div>
 <?php require '../template/partials/_bottom.tpl.php'; ?>
 
