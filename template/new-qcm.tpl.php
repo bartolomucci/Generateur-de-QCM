@@ -1,5 +1,6 @@
 <?php require '../template/partials/_top.tpl.php'; ?>
 <div class="container">
+<a class="d-flex justify-content-start" href="index.php">Retourner en arrière</a>
     <form action="" method="POST">
         <label>Titre du QCM</label>
         <input type="text" name="title" required/>

@@ -1,6 +1,6 @@
 <?php require '../template/partials/_top.tpl.php'; ?>
 <div class="container">
-<a href="index-question.php">Go back</a>
+<a class="d-flex justify-content-start" href="index-question.php">Retourner en arrière</a>
     <form action="" method="POST">
         <label>Intitulé de la question</label>
         <input type="text" name="title" value="<?= htmlspecialchars($question->getTitle()) ?>" required/>

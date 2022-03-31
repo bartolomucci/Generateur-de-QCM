@@ -1,16 +1,14 @@
 <?php require '../template/partials/_top.tpl.php'; ?>
 <div class="container">
-<a href="index-question.php">Questions</a>    
+<h2 class="text-info">QCM(s)</h2>
 
-<h1>Mes QCMs</h1>
-
-    <a href="/new-qcm.php">Nouveau</a>
-    <table border="1">
-        <thead>
+    <a href="/new-qcm.php">Créer un nouveau QCM</a>
+    <table class="table table-dark">
+        <thead class="thead thead-light">
             <tr>
                 <th>Id</th>
                 <th>Titre</th>
-                <th>Actions</th>
+                <th class="text-center">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -18,7 +16,7 @@
             <tr>
                 <td><?= $qcm->getId() ?></td>
                 <td><?= $qcm->getTitle() ?></td>
-                <td>
+                <td class="d-flex flex-row justify-content-evenly">
                     <a href="">Modifier</a>
                     <a href="">Supprimer</a>
                 </td>
