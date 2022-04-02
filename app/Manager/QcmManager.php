@@ -10,7 +10,7 @@ class QcmManager
     {
         try
         {
-            $this->pdo = new PDO('mysql:host=localhost;dbname=qcm_generator','root');
+            $this->pdo = new PDO('mysql:host=localhost;dbname=my_qcm_generator','root');
         }
         catch(PDOException $e)
         {
@@ -73,6 +73,18 @@ class QcmManager
         $req->execute([
             'title' => $title,
             'id' => $id
+        ]);
+    }
+
+    
+    public function delete(int $id, int $id_qcm)
+    {
+        $sql = "DELETE FROM qcm WHERE qcm.id = :id;
+        DELETE FROM question WHERE question.id_qcm = :id_qcm";
+        $req = $this->pdo->prepare($sql);
+        $req->execute([
+            'id' => $id,
+            'id_qcm' => $id_qcm
         ]);
     }
 

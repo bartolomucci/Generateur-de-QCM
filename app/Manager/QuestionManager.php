@@ -10,7 +10,7 @@ class QuestionManager
     {
         try
         {
-            $this->pdo = new PDO('mysql:host=localhost;dbname=qcm_generator','root');
+            $this->pdo = new PDO('mysql:host=localhost;dbname=my_qcm_generator','root');
         }
         catch(PDOException $e)
         {

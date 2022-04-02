@@ -14,6 +14,7 @@
         <li><a href="index.php">QCM</a></li>
         <li><a href="index-question.php">Question</a></li>
         <li><a href="index-answer.php">Réponse</a></li>
+        <li><a href="index-display.php">Affichage</a></li>
     </ul>
 </nav>
 

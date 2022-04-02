@@ -3,19 +3,33 @@
 class Answer
 {
 
+    private int $id;
+
     private string $text;
 
-    private bool $isTheGoodAnswer;
+    private int $is_the_good;
+    
+    private int $id_question;
 
-    public function __construct(string $text, bool $isTheGoodAnswer = false)
+        /**
+     * Get the value of id_question
+     */ 
+    public function getId_question()
     {
-        $this->setText($text)->setIsTheGoodAnswer($isTheGoodAnswer);
+        return $this->id_question;
     }
 
-    // TODO : ajouter les propriétés
+    /**
+     * Set the value of id_question
+     *
+     * @return  self
+     */ 
+    public function setId_question($id_question)
+    {
+        $this->id_question = $id_question;
 
-    // TODO : ajouter les méthodes
-
+        return $this;
+    }
 
     /**
      * Get the value of text
@@ -38,22 +52,43 @@ class Answer
     }
 
     /**
-     * Get the value of isTheGoodAnswer
+     * Get the value of is_the_good
      */ 
-    public function getIsTheGoodAnswer()
+    public function getis_the_good()
     {
-        return $this->isTheGoodAnswer;
+        return $this->is_the_good;
     }
 
     /**
-     * Set the value of isTheGoodAnswer
+     * Set the value of is_the_good
      *
      * @return  self
      */ 
-    public function setIsTheGoodAnswer($isTheGoodAnswer)
+    public function setis_the_good($is_the_good)
     {
-        $this->isTheGoodAnswer = $isTheGoodAnswer;
+        $this->is_the_good = $is_the_good;
 
         return $this;
     }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
 }

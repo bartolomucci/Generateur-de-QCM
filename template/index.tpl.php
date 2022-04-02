@@ -18,7 +18,7 @@
                 <td><?= $qcm->getTitle() ?></td>
                 <td class="d-flex flex-row justify-content-evenly">
                     <a href="/edit-qcm.php?id=<?= $qcm->getId(); ?>">Modifier</a>
-                    <a href="/delete-qcm.php?id=<?= $qcm->getId(); ?>">Supprimer</a>
+                    <a href="/delete-qcm.php?id=<?= $qcm->getId(); ?>&id_qcm=<?= $qcm->getId(); ?>">Supprimer</a>
                 </td>
             </tr>
             <?php endforeach; ?>
