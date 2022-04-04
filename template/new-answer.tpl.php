@@ -13,9 +13,9 @@
         <input type="text" name="text" required/>
         <br>
         <label for="is_the_good">Est-ce la bonne réponse?</label>
-        <input type="radio" id="yes" name="is_the_good" value=1 required>
+        <input type="radio" id="yes" name="is_the_good" value="1" required>
         <label for="yes">Oui</label> 
-        <input type="radio" is="no" name="is_the_good" value=0 required>
+        <input type="radio" is="no" name="is_the_good" value="0" required>
         <label for="no">Non</label> 
         <br>
         <input type="submit" name="submit" value="Enregistrer" />
