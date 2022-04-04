@@ -58,7 +58,7 @@ class AnswerManager
 
     public function insert(string $text, int $is_the_good, int $id_question)
     {
-        $sql = "INSERT INTO answer (text,is_the_good,id_question) VALUES (:text, :is_the_good :id_question)";
+        $sql = "INSERT INTO answer (text,is_the_good,id_question) VALUES (:text, :is_the_good, :id_question)";
         $req = $this->pdo->prepare($sql);
         $req->execute([
             'text' => $text,

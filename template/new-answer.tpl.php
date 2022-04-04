@@ -5,7 +5,7 @@
         <label for="id_question">A quel question est lié cette réponse?</label>
         <select name="id_question">
             <?php foreach($questions as $question): ?>
-                <option value="<?= $question->getId() ?>"><?= $question->getTitle() ?></option>
+                <option value="<?= $question->getId() ?>"><?= $question->getTitle() ?></option required>
             <?php endforeach; ?>
         </select>
         <br>
@@ -13,10 +13,10 @@
         <input type="text" name="text" required/>
         <br>
         <label for="is_the_good">Est-ce la bonne réponse?</label>
-        <input type="radio" name="is_the_good" value="1">
-        <label>Oui</label> 
-        <input type="radio" name="is_the_good" value="0">
-        <label>Non</label> 
+        <input type="radio" id="yes" name="is_the_good" value=1 required>
+        <label for="yes">Oui</label> 
+        <input type="radio" is="no" name="is_the_good" value=0 required>
+        <label for="no">Non</label> 
         <br>
         <input type="submit" name="submit" value="Enregistrer" />
     </form>

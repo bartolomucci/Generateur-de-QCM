@@ -10,11 +10,9 @@
 </head>
 <body>
 <nav>
-    <ul class="d-flex flex-column justify-content-between">
-        <li><a href="index.php">QCM</a></li>
-        <li><a href="index-question.php">Question</a></li>
-        <li><a href="index-answer.php">Réponse</a></li>
+    <ul>
+        <li><a href="index.php">Retour à l'accueil</a></li>
     </ul>
 </nav>
 
-<h1 class="text-center">Mon générateur de QCM</h1>
+<h1 class="text-center">BRAVO !</h1>

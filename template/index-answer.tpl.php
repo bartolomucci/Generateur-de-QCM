@@ -8,6 +8,7 @@
             <tr>
                 <th>Id</th>
                 <th>Titre</th>
+                <th>VRAI/FAUX (1,0)</th>
                 <th class="text-center">Actions</th>
             </tr>
         </thead>
@@ -16,6 +17,7 @@
             <tr>
                 <td><?= $answer->getId() ?></td>
                 <td><?= $answer->getText() ?></td>
+                <td><?= $answer->getis_the_good() ?></td>
                 <td class="d-flex flex-row justify-content-evenly">
                     <a href="/edit-answer.php?id=<?= $answer->getId() ?>">Modifier</a>
                     <a href="/delete-answer.php?id=<?= $answer->getId() ?>">Supprimer</a>

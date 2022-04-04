@@ -13,6 +13,7 @@ if(isset($_POST['submit']))
         require '../app/Manager/QuestionManager.php';
         $manager = new QuestionManager();
         $qcmId = $manager->insert($_POST['title'], $_POST['id_qcm']);
+        
 
         if($qcmId)
         {
