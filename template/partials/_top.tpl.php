@@ -17,4 +17,4 @@
     </ul>
 </nav>
 
-<h1 class="text-center">Mon générateur de QCM</h1>
+<h1 class="text-center">Générateur de QCM</h1>

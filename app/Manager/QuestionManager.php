@@ -92,4 +92,13 @@ class QuestionManager
         ]);
     }
 
+    public function fromIdQcm(int $id_qcm)
+    {
+        $sql = "SELECT id from QUESTION WHERE question.id_qcm = :id_qcm";
+        $req = $this->pdo->prepare($sql);
+        $req->execute([
+            'id_qcm' => $id_qcm,
+        ]);
+    }
+
 }

@@ -77,15 +77,12 @@ class QcmManager
     }
 
     
-    public function delete(int $id, int $id_qcm)
+    public function delete(int $id)
     {
-        $sql = "DELETE FROM qcm WHERE qcm.id = :id;
-        DELETE FROM question WHERE question.id_qcm = :id_qcm";
+        $sql = "DELETE FROM qcm WHERE qcm.id = :id";
         $req = $this->pdo->prepare($sql);
         $req->execute([
             'id' => $id,
-            'id_qcm' => $id_qcm
         ]);
     }
-
 }

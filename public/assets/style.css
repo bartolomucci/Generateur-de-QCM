@@ -7,3 +7,9 @@ a
 {
     text-decoration: none;
 }
+
+footer
+{
+    position: fixed;
+    top: 740px;
+}
